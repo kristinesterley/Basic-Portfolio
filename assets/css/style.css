@@ -2,8 +2,8 @@
 	Kristin Esterley */
 * {
 	box-sizing: border-box;
-	margin:0;
-}
+	margin:0; /* sticky footer requirement */
+	}
 
 body{
 
@@ -13,13 +13,12 @@ body{
 	color: #777777;
 	font-family: "Ariel" "Helvetica Neue", Helvetica, sans-serif;
 
-}
+	}
 a{
 	text-decoration: none;
-}
+	}
 
 header {
-/*	display: block;*/
 	background-color: white;
 	color: #eee;
 	height: 80px;
@@ -28,7 +27,7 @@ header {
 
 h1, h2, h3 {
 	font-family: "Georgia", Times, "Times New Roman", serif;
-}	
+	}	
 
 h1 {
 	background-color: #4aaaa5;
@@ -44,103 +43,95 @@ h1 {
 	padding-top: 30px;
 	margin:0 auto 0;
 	font-size: 36px;
-
-}
-
-	.site-navigate {
-	
-		height:80px;
-		width: 200px;
-		float:right;
-		text-align: center;
-		padding-top: 25px;
-		margin-right: 10%;
 	}
 
-	.wrapper {
-		clear:both;
-		overflow: auto;
-		position: absolute;
-		width: 100%;
-		min-height: 100%;
-		height: auto !important;
-		height: 100%;
-		margin: 0 auto -80px;
-		background-image: url("../images/shl.png");
-		background-repeat: repeat;
-		background-color: #eee;
-		border: 5px;
-		border-style:solid;
-		border-color:#dddddd;
+.site-navigate {	
+	height:80px;
+	width: 200px;
+	float:right;
+	text-align: center;
+	padding-top: 25px;
+	margin-right: 10%;
+	}
 
+.wrapper {
+	clear:both;
+	overflow: auto;
+	position: absolute;
+	width: 100%;
+	/* specifications for sticky footer */
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -80px;
+	/* end specifications for sticky footer */
+	background-image: url("../images/shl.png");
+	background-repeat: repeat;
+	background-color: #eee;
+	border: 5px;
+	border-style:solid;
+	border-color:#dddddd;
 	}
-	h2 {
-		color:#4aaaa5;
-		font-size: 24px;
+h2 {
+	color:#4aaaa5;
+	font-size: 24px;
 	}
-	h3 {
-		color:#4aaaa5;
-		font-size: 18px;
+h3 {
+	color:#4aaaa5;
+	font-size: 18px;
 	}
-	h4 {
+h4 {
 /*		background-color: #4aaaa5;
-		color:white;*/
-		height:40px;
-		width: 200px;
-		margin: 20px;
-		text-align: center;
+		color:white*/
+	height:20px;
+	width: 200px;
+	margin: 20px;
+	padding-bottom:10px;
+	text-align: center;
 /*		position: absolute;
 		left:0;
 		right: 0;
 		bottom: 15px;*/
 
 	}
-	.main-container {
-		clear:both;
-		overflow: auto;
-		background-color: white;
-		width: 650px;
-		height: auto;
-		position:absolute;
-		top: 40px;
-		left: 40px;
-		padding:10px;
+.main-container {
+	clear:both;
+	overflow: auto;
+	background-color: white;
+	width: 650px;
+	height: auto;
+	position:absolute;
+	top: 40px;
+	left: 40px;
+	padding:10px;
 	}
 	
-	.bio-image
-	{
-		width: 100px;
-		height: 148px;
-		float: left;
-		margin-bottom: 10px;
-		margin-right: 10px;
+.bio-image{
+	width: 100px;
+	height: 148px;
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
 	}
-	.portfolio-image 
-	{
-		width: 200px;
-		height:150px;
-		float:left;
-		margin:20px;
-
-
+.portfolio-image {
+	width: 200px;
+	height:150px;
+	float:left;
+	margin:20px;
 	}
-
-
-	.connect-container {
-		clear:both;
-		overflow: auto;
-		background-color: white;
-		width: 160px;
-		height: 120px;
-		margin-top:40px;
-		margin-right: 15%;
+.connect-container {
+	clear:both;
+	overflow: auto;
+	background-color: white;
+	width: 160px;
+	height: 120px;
+	margin-top:40px;
+	margin-right: 15%;
 /*		position:absolute;
 		top: 40px;
 		left: 500px;*/
-		float:right;
-		padding: 10px;
-
-
+	float:right;
+	padding: 10px;
 	}
 
 	/*form stuff taken off Mozilla Developer Network and modified */
@@ -197,6 +188,7 @@ textarea {
      It works only on Chrome, Firefox and Safari */
   resize: vertical;
 }
+/* end form stuff from MDN */
 
 
 button {
@@ -213,24 +205,24 @@ table {
 td {
 	/*position: absolute;*/
 }
+/* .push speicification for sticky footer */
 .push {
 	height: 80px;
 	}
 
-footer {
-		clear:both;
-		overflow: auto;
-		position: absolute;
-		width: 100%;
-		height: 80px;
-		background-color: #666666;
-		bottom: 0;
-		text-align: center;
-		padding: 20px;
-		border-top:5px;
-		border-top-style:solid;
-		border-top-color:#4aaaa5;
-		margin:0;
 
-	
+footer {
+	clear:both;
+	overflow: auto;
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	background-color: #666666;
+	bottom: 0;
+	text-align: center;
+	padding: 20px;
+	border-top:5px;
+	border-top-style:solid;
+	border-top-color:#4aaaa5;
+	margin:0;
 	}
